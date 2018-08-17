@@ -1,0 +1,14 @@
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.csprojAssemblyReference.cache
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.Form1.resources
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.Properties.Resources.resources
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.csproj.GenerateResource.cache
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.csproj.CoreCompileInputs.cache
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\bin\Debug\ResultCodeDescriptions.exe.config
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\bin\Debug\ResultCodeDescriptions.exe
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\bin\Debug\ResultCodeDescriptions.pdb
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\bin\Debug\HtmlAgilityPack.dll
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\bin\Debug\HtmlAgilityPack.pdb
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\bin\Debug\HtmlAgilityPack.xml
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.csproj.CopyComplete
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.exe
+c:\users\ryan\source\repos\ResultCodeDescriptions\ResultCodeDescriptions\obj\Debug\ResultCodeDescriptions.pdb

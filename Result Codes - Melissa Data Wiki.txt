@@ -1,0 +1,4579 @@
+
+ AS01
+|
+ Address Fully Verified
+|
+ The address is valid and deliverable according to official postal agencies.
+|@
+ 
+ AS02
+|
+ Street Only Match
+|
+ The street address was verified but the suite/apartment number is missing or invalid.
+|@
+ 
+ AS03
+|
+ Non USPS Address Match
+|
+ US Only. This US address is not serviced by the USPS but does exist and may receive mail through third party carriers like UPS.
+|@
+ 
+ AS09
+|
+ Foreign Address
+|
+ The address is in a non-supported country.
+|@
+ 
+ AS10
+|
+ CMRA Address
+|
+ US Only. The address is a Commercial Mail Receiving Agency (CMRA) like a Mailboxes Etc. These addresses include a Private Mail Box (PMB or #) number.
+|@
+ 
+ AS11
+|
+ PBSA Address
+|
+ A Post Office Box address with a street style address instead of the normal PO Box # address format.
+|@
+ 
+ AS12
+|
+ Record Move
+|
+ The record moved to a new address.
+|@
+ 
+ AS13
+|
+ Address Updated By LACS
+|
+ US Only. The address has been converted by LACSLink® from a rural-style address to a city-style address.
+|@
+ 
+ AS14
+|
+ Suite Appended
+|
+ US Only. A suite was appended by SuiteLink™ using the address and company name.
+|@
+ 
+ AS15
+|
+ Apartment Appended
+|
+ An apartment number was appended by AddressPlus using the address and last name.
+|@
+ 
+ AS16
+|
+ Vacant Address
+|
+ US Only. The address has been unoccupied for more than 90 days.
+|@
+ 
+ AS17
+|
+ No Mail Delivery
+|
+ US Only. The address does not currently receive mail but will likely in the near future.
+|@
+ 
+ AS18
+|
+ DPV Locked Out
+|
+ US Only. DPV processing was terminated due to the detection of what is determined to be an artificially created address.
+|@
+ 
+ AS20
+|
+ Deliverable only by USPS
+|
+ US Only. This address can only receive mail delivered through the USPS (i.e. PO Box or a military address).
+|@
+ 
+ AS22
+|
+ No Alternate Address Suggestion Found
+|
+ No alternate address suggestion was found for this address.
+|@
+ 
+ AS23
+|
+ Extraneous Information
+|
+ Extraneous information not used in verifying the address was found. This includes unnecessary sub premises and other unrecognized data. Additional information will either be parsed into the Suite or Parsed Garbage/AddressExtras output.
+|@
+ 
+ AS24
+|
+ USPS Door Not Accessible
+|
+ Address identified by the USPS where carriers cannot physically access a building or door for mail delivery.
+|@
+ 
+ AE01
+|
+ Postal Code Error/General Error
+|
+ The address could not be verified at least up to the postal code level.
+|@
+ 
+ AE02
+|
+ Unknown Street
+|
+ Could not match the input street to a unique street name. Either no matches or too many matches found.
+|@
+ 
+ AE03
+|
+ Component Mismatch Error
+|
+ The combination of directionals (N, E, SW, etc) and the suffix (AVE, ST, BLVD) is not correct and produced multiple possible matches.
+|@
+ 
+ AE04
+|
+ Non-Deliverable Address
+|
+ US Only. A physical plot exists but is not a deliverable addresses. One example might be a railroad track or river running alongside this street, as they would prevent construction of homes in that location.
+|@
+ 
+ AE05
+|
+ Multiple Match
+|
+ The address was matched to multiple records.  There is not enough information available in the address to break the tie between multiple records.
+|@
+ 
+ AE06
+|
+ Early Warning System
+|
+ US Only. This address currently cannot be verified but was identified by the Early Warning System (EWS) as belonging to a upcoming area and will likely be included in a future update.
+|@
+ 
+ AE07
+|
+ Missing Minimum Address
+|
+ Minimum requirements for the address to be verified is not met. Address must have at least one address line and also the postal code or the locality/administrative area.
+|@
+ 
+ AE08
+|
+ Sub Premise Number Invalid
+|
+ The thoroughfare (street address) was found but the sub premise (suite) was not valid.
+|@
+ 
+ AE09
+|
+ Sub Premise Number Missing
+|
+ The thoroughfare (street address) was found but the sub premise (suite) was missing.
+|@
+ 
+ AE10
+|
+ Premise Number Invalid
+|
+ The premise (house or building) number for the address is not valid.
+|@
+ 
+ AE11
+|
+ Premise Number Missing
+|
+ The premise (house or building) number for the address is missing.
+|@
+ 
+ AE12
+|
+ Box Number Invalid
+|
+ The PO (Post Office Box), RR (Rural Route), or HC (Highway Contract) Box number is invalid.
+|@
+ 
+ AE13
+|
+ Box Number Missing
+|
+ The PO (Post Office Box), RR (Rural Route), or HC (Highway Contract) Box number is missing.
+|@
+ 
+ AE14
+|
+ PMB Number Missing
+|
+ US Only. The address is a Commercial Mail Receiving Agency (CMRA) and the Private Mail Box (PMB or #) number is missing.
+|@
+ 
+ AE15
+|
+ Demo Mode
+|
+ Limited to Demo Mode operation. Please contact a Melissa Data CSR at 1-800-800-6245 x4.
+|@
+ 
+ AE16
+|
+ Expired Database
+|
+ The Database has expired. Please contact a Melissa Data CSR at 1-800-800-6245 x4.
+|@
+ 
+ AE17
+|
+ Sub Premise Not Required (Deprecated - See AS23)
+|
+ A sub premise (suite) number was entered but the address does not have secondaries. (Deprecated - See AS23)
+|@
+ 
+ AE19
+|
+ Find Suggestion Timeout
+|
+ The FindSuggestion function has exceeded the time limit.
+|@
+ 
+ AE20
+|
+ Find Suggestion Disabled
+|
+ The FindSuggestion function is disabled. See the manual for further details.
+|@
+ 
+ AE21
+|
+ Invalid MAK
+|
+ The input MAK was invalid. This can be caused by:
+MAK input requires Append Action Enabled
+Too many or too few digits
+Non-Numeric Characters detected
+MAK not found
+|@
+ 
+ AC01
+|
+ Postal Code Change
+|
+ The postal code was changed or added.
+|@
+ 
+ AC02
+|
+ Administrative Area Change
+|
+ The administrative area (state, province) was added or changed.
+|@
+ 
+ AC03
+|
+ Locality Change
+|
+ The locality (city, municipality) name was added or changed.
+|@
+ 
+ AC04
+|
+ Alternate to Base Change
+|
+ US Only. The address was found to be an alternate record and changed to the base (preferred) version.
+|@
+ 
+ AC05
+|
+ Alias Name Change
+|
+ US Only. An alias is a common abbreviation for a long street name, such as “MLK Blvd” for “Martin Luther King Blvd.” This change code indicates that the full street name (preferred) has been substituted for the alias.
+|@
+ 
+ AC06
+|
+ Address1/Address2 Swap
+|
+ Address1 was swapped with Address2 because Address1 could not be verified and Address2 could be verified.
+|@
+ 
+ AC07
+|
+ Address1 &amp; Company Swapped
+|
+ Address1 was swapped with Company because only Company had a valid address.
+|@
+ 
+ AC08
+|
+ Plus4 Change
+|
+ US Only. A non-empty plus4 was changed.
+|@
+ 
+ AC09
+|
+ Dependent Locality Change
+|
+ The dependent locality (urbanization) was changed.
+|@
+ 
+ AC10
+|
+ Thoroughfare Name Change
+|
+ The thoroughfare (street) name was added or changed due to a spelling correction.
+|@
+ 
+ AC11
+|
+ Thoroughfare Type Change
+|
+ The thoroughfare (street) leading or trailing type was added or changed, such as from "St" to "Rd."
+|@
+ 
+ AC12
+|
+ Thoroughfare Directional Change
+|
+ The thoroughfare (street) pre-directional or post-directional was added or changed, such as from "N" to "NW."
+|@
+ 
+ AC13
+|
+ Sub Premise Type Change
+|
+ The sub premise (suite) type was added or changed, such as from “STE” to “APT.”
+|@
+ 
+ AC14
+|
+ Sub Premise Number Change
+|
+ The sub premise (suite) unit number was added or changed.
+|@
+ 
+ AC15
+|
+ Double Dependent Locality Change
+|
+ The double dependent locality was added or changed.
+|@
+ 
+ AC16
+|
+ SubAdministrative Area Change
+|
+ The subadministrative area was added or changed.
+|@
+ 
+ AC17
+|
+ SubNational Area Change
+|
+ The subnational area was added or changed.
+|@
+ 
+ AC18
+|
+ PO Box Change
+|
+ The PO Box was added or changed.
+|@
+ 
+ AC19
+|
+ Premise Type Change
+|
+ The premise type was added or changed.
+|@
+ 
+ AC20
+|
+ House Number Change
+|
+ The house number was changed.
+|@
+ 
+ AC22
+|
+ Organization Change
+|
+ The organization was added or changed.
+|@
+ 
+ ES01
+|
+ Valid Email
+|
+ This email was confirmed to be a valid email.
+|@
+ 
+ ES02
+|
+ Invalid Email
+|
+ This email was confirmed to be a invalid email.
+|@
+ 
+ ES03
+|
+ Unknown Email
+|
+ This email's status is unknown due to unknown external factors. Please try again another time.
+|@
+ 
+ ES04
+|
+ Mobile Email Address
+|
+ The domain name was identified as a mobile email address and classified as not deliverable by the FCC.
+|@
+ 
+ ES05
+|
+ Disposable Domain
+|
+ The domain name of the submitted email was identified as a disposable domain.
+|@
+ 
+ ES06
+|
+ Spamtrap Domain
+|
+ The domain name of the submitted email was identified as a spamtrap. Mailing to this domain could result in the sender being blacklisted.
+|@
+ 
+ ES07
+|
+ Accept All Server
+|
+ The mail server is an accept all server. Accept-All domains is set in a way that makes all emails seem valid.
+|@
+ 
+ ES08
+|
+ Role Address
+|
+ This Email address was created as a group, ex: sales, support, or postmaster.
+|@
+ 
+ ES09
+|
+ Protected Mailbox Caution
+|
+ The mail provider for this email address may be quick to classify senders as spam and will not respond to our requests. Mailbox validation is not possible at this time and the mailbox may or may not exist. We recommend proceeding with caution if emailing numerous records to this mail domain.
+|@
+ 
+ ES10
+|
+ Syntax Changed
+|
+ The syntax of the submitted email address was changed.
+|@
+ 
+ ES11
+|
+ Top Level Domain Changed
+|
+ The top level domain of the submitted email address was changed.
+|@
+ 
+ ES12
+|
+ Domain Changed (Spelling)
+|
+ The domain of the submitted email address was corrected for spelling.
+|@
+ 
+ ES13
+|
+ Domain Changed (Update)
+|
+ The domain of the submitted email address was updated due to a domain name change.
+|@
+ 
+ ES20
+|
+ Verify (Precision: Domain Result)
+|
+ The email is considered valid, but did not have the mailbox verified and not found in our mailbox database.
+|@
+ 
+ ES21
+|
+ Verify (Precision: Cached Mailbox Result)
+|
+ The mailbox was found to be already validated in our mailbox database.
+|@
+ 
+ ES22
+|
+ Verify (Precision: Real-time Mailbox Result)
+|
+ The mailbox validation was performed in real-time.
+|@
+ 
+ ES23
+|
+ Verify (Precision: Unicode Result)
+|
+ Unicode Detected: We do not support Unicode at this time for realtime mailbox validation. Domain and cache check only.
+|@
+ 
+ ES24
+|
+ Verify (Precision: Pending Mailbox Result)
+|
+ The mail provider has been known to send a delayed response so it is possible that the pending status will change within the next 24 hours. You may want to resubmit this input at a later time as an update may be possible.
+|@
+ 
+ EE01
+|
+ Syntax Error
+|
+ There is a syntax error in the submitted email address.
+|@
+ 
+ EE02
+|
+ A Domain Not Found
+|
+ A Domain of the submitted email address was not found.
+|@
+ 
+ EE03
+|
+ Mail Server Not Found
+|
+ The mail server of the submitted email address was not found.
+|@
+ 
+ EE04
+|
+ Invalid Mailbox
+|
+ An invalid mailbox was detected (i.e. noreply).
+|@
+ 
+ EE05
+|
+ Email Object not Initialized
+|
+ Email Object was not initialized properly. Please review your code and data files.
+|@
+ 
+ XS01
+|
+ Complete Result Set Returned
+|
+ The search was completed and the complete result set was returned.
+|@
+ 
+ XS02
+|
+ Partial Result Set Returned
+|
+ The search was completed and a partial result set was returned.
+|@
+ 
+ XS03
+|
+ No Results Returned
+|
+ The search was completed and no results were found.
+|@
+ 
+GS01
+|
+ Geocoded to Street Level
+|
+ The record was coded to the street level (Zip+4 for US, full postal code for CA).
+|@
+ 
+ GS02
+|
+ Geocoded to the Neighborhood Level
+|
+ The record was geocoded down to neighborhood level (Zip+2 for US).
+|@
+ 
+ GS03
+|
+ Geocoded to Community Level
+|
+ The record was coded to the community level (ZIP centroid for US, 3-digit postal code for CA).
+|@
+ 
+ GS04
+|
+ Geocoded to State Level
+|
+ The record was geocoded to the state (administrative area) level.
+|@
+ 
+ GS05
+|
+ Geocoded to Rooftop Level
+|
+ The record was geocoded down to the rooftop level, meaning the point is within the property boundaries, usually the center.
+|@
+ 
+ GS06
+|
+ Geocoded to Interpolated Rooftop Level
+|
+ The record was geocoded down to the rooftop level using interpolation (educated estimations using street coordinates). The point may be in or close to the property boundaries.
+|@
+ 
+ GS07
+|
+ Records Found
+|
+ The service successfully reverse geocoded the input coordinates and returned addresses.
+|@
+ 
+ GS10
+|
+ Wire Center Lat/Long
+|
+ The latitude and longitude are based off of the wire center of the phone number.
+|@
+ 
+ GE01
+|
+ Invalid Postal Code
+|
+ The submitted postal code is not in a valid format. Not to be confused with the GE01 Transmission result code.
+|@
+ 
+ GE02
+|
+ Postal Code Coordinates Not Found in Database
+|
+ The submitted postal code coordinates were not found in the Geocode database. Not to be confused with the GE02 Transmission result code.
+|@
+ 
+ GE03
+|
+ Demo Mode
+|
+ Geocoder is in Demo mode and a zip code outside the Demo range was detected.
+|@
+ 
+ GE04
+|
+ Data Files Expired
+|
+ Geocoder data files are expired. Please update with the latest data files.
+|@
+ 
+ GE05
+|
+ License Not Enabled For Country
+|
+ Geocoding for the country of input record is disabled for your License Key. Please contact your sales representative to enable.
+|@
+ 
+ GE50
+|
+ Invalid Latitude/Longitude
+|
+ The submitted latitude/longitude was not valid. The service only accepts geo-coordinates in decimal formats.
+|@
+ 
+ GE51
+|
+ No Points Found
+|
+ No points were found within the specified maximum distance. You may need to increase MaxDistance.
+|@
+ 
+ GE52
+|
+ Out of Region
+|
+ The submitted latitude/longitude was not in the U.S. and no addresses were returned.
+|@
+ 
+ AV11
+|
+ Administrative Area Partial
+|
+ The address has been partially verified to the Administrative Area (State) Level, which is NOT the highest level possible with the reference data.
+|@
+ 
+ AV12
+|
+ Locality Partial
+|
+ The address has been partially verified to the Locality (City) Level, which is NOT the highest level possible with the reference data.
+|@
+ 
+ AV13
+|
+ Thoroughfare Partial
+|
+ The address has been partially verified to the Thoroughfare (Street) Level, which is NOT the highest level possible with the reference data.
+|@
+ 
+ AV14
+|
+ Premise Partial
+|
+ The address has been partially verified to the Premise (House or Building) Level, which is NOT the highest level possible with the reference data.
+|@
+ 
+ AV21
+|
+ Administrative Area Full
+|
+ The address has been verified to the Administrative Area (State) Level, which is the highest level possible with the reference data.
+|@
+ 
+ AV22
+|
+ Locality Full
+|
+ The address has been verified to the Locality (City) Level, which is the highest level possible with the reference data.
+|@
+ 
+ AV23
+|
+ Thoroughfare Full
+|
+ The address has been verified to the Thoroughfare (Street) Level, which is the highest level possible with the reference data.
+|@
+ 
+ AV24
+|
+ Premises Full
+|
+ The address has been verified to the Premise (House or Building) Level, which is the highest level possible with the reference data.
+|@
+ 
+ AV25
+|
+ SubPremises Full
+|
+ The address has been verified to the SubPremise (Suite) or PO Box Level, which is the highest level possible with the reference data.
+|@
+ 
+
+|
+ Unverified
+|@
+ 
+ A
+|
+ Alias
+|@
+ 
+ F
+|
+ Firm or Company
+|@
+ 
+G
+|
+ General Delivery
+|@
+ 
+H
+|
+ Highrise or Business Complex
+|@
+ 
+M
+|
+ Military Address
+|@
+ 
+P
+|
+ PO  Box
+|@
+ 
+R
+|
+ Rural Route
+|@
+ 
+S
+|
+ Street  or  Residential
+|@
+ 
+ U
+|
+ Unique/LVR
+|@
+ 
+ 1
+|
+ Street
+|@
+ 
+ 2
+|
+ Street Served by Route and GD
+|@
+ 
+ 3
+|
+ Lock  Box
+|@
+ 
+ 4
+|
+ Route Service
+|@
+ 
+5
+|
+ General Delivery
+|@
+ 
+ B
+|
+ LVR Street
+|@
+ 
+ C
+|
+ Government Street
+|@
+ 
+ D
+|
+ LVR Lock Box
+|@
+ 
+ E
+|
+ Government Lock Box
+|@
+ 
+ L
+|
+ LVR General Delivery
+|@
+ 
+ K
+|
+ Building
+|@
+ 
+  M
+|
+ Multiple Matches
+|
+ More than one record matches the address and there is not enough information available in the input address to break the tie between multiple records. Passing more complete information, such as city names or urbanization names, can help reduce the number of multiple match errors.
+|@
+ 
+  N
+|
+ No Street Data for Zip
+|
+ The Zip Code exists but no streets begin with the same letter in that Zip Code.
+|@
+ 
+  R
+|
+ Range Error
+|
+ The address was found but the street number in the input address was not between the low and high range in the CASS database.
+|@
+ 
+  T
+|
+ Component Error
+|
+ Either the directionals or the suffix field did not match the CASS database, and there was more than one choice for correcting the address. For example, if the given address was "100 Main St" and the only addresses found were "100 E Main St" and 100 Main Ave" the error code "T" would be returned because we do not know whether to add the directional "E" or to change the suffix to "Ave".
+|@
+ 
+  U
+|
+ Unknown Street
+|
+ An exact street name match could not be found and phonetically matching the street name resulted in either no matches or matches to more than one street name.
+|@
+ 
+  X
+|
+ Non-Deliverable Address
+|
+ The physical location exists but there are no homes on this street. One reason might be that there are railroad tracks or a river running alongside this street, as they would prevent construction of homes in this location.
+|@
+ 
+  Z
+|
+ Invalid Zip Code
+|
+ The Zip Code does not exist and could not be determined by the city and state.
+|@
+ 
+  C
+|
+ Canadian Postal Code
+|
+ The Zip Code matches the format characteristics of a Canadian Postal Code.
+|@
+ 
+  W
+|
+ EWS File Record
+|
+ The Zip Code was found in the Early Warning System Data. These are new addresses scheduled to be included in the next USPS national database.
+|@
+ 
+   D
+|
+ Demo Mode
+|
+ If processing with the demo CASS database, records not in the state of Nevada will be coded with "D".
+|@
+ 
+   E
+|
+ Expired Database
+|
+ The CASS database has expired.
+|@
+ 
+   S
+|
+ Standardized but Not Coded
+|
+ Standardization means that some conversion was done on the address (for example, changing "Post Office Box" to "PO Box").
+|@
+ 
+   V
+|
+ Street Number Validated to DPV Level
+|
+ This record has been DPV validated. You can check the DPV Footnotes for more information about the level of validation.
+|@
+ 
+   X
+|
+ Address Not Coded
+|
+ Check the Error code and/or DPV Footnotes for more information.
+|@
+ 
+   7
+|
+ Multiple Matches
+|
+ There were multiple matches for the address that were all in the same Zip Code and Carrier Route. The returned Zip Code and Carrier Route will be correct but you will not get any Plus 4 information.
+|@
+ 
+   9
+|
+ Fully Coded
+|
+ The address was fully CASS coded.
+|
+ 
+|@
+ 
+ U
+|
+ A unique record.
+|@
+ 
+ O
+|
+ An output record that has dupes (i.e. is not unique).
+|@
+ 
+ D
+|
+ A duplicate record that was rejected.
+|@
+ 
+ S
+|
+ A suppression table record (neither output nor reject). A lowercase s means that this record was used to suppress records. An uppercase S means that this record didn't find any matching record to suppress.
+|@
+ 
+ X
+|
+ A Regular, Self Purge, or No-Purge record that was suppressed (rejected).
+|@
+ 
+ I
+|
+ An intersection table record (neither output nor reject). A lowercase i means that this record was used to intersect records. An uppercase I means that this record didn't find any matching record to intersect.
+|@
+ 
+ Y
+|
+ A Regular, Self Purge, or No-Purge record that had no intersection hits (rejected).
+|@
+ 
+ B
+|
+ PO Box
+|@
+ 
+ C
+|
+ City Delivery
+|@
+ 
+ G
+|
+ General Delivery
+|@
+ 
+ H
+|
+ Highway Contract
+|@
+ 
+ R
+|
+ Rural Route
+|@
+ 
+ (No code)
+|
+ Military
+|@
+ 
+ 4
+|
+ Atlantic Time
+|@
+ 
+ 5
+|
+ Eastern Time
+|@
+ 
+ 6
+|
+ Central Time
+|@
+ 
+ 7
+|
+ Mountain Time
+|@
+ 
+ 8
+|
+ Pacific Time
+|@
+ 
+ 9
+|
+ Alaska time
+|@
+ 
+ 10
+|
+ Hawaii Time
+|@
+ 
+ 11
+|
+ Samoa Time
+|@
+ 
+ 13
+|
+ Marshall Island Time
+|@
+ 
+ 14
+|
+ Guam Time
+|@
+ 
+ 15
+|
+ Palau Time
+|@
+ 
+  AA
+|
+ Input address matched to the Zip+4 file.
+|@
+ 
+  A1
+|
+ Input address not matched to the Zip+4 file.
+|@
+ 
+  BB
+|
+ Input address matched to DPV (all components).
+|@
+ 
+  CC
+|
+ Input address primary number (street number) matched to DPV but secondary number not matched.
+|@
+ 
+  N1
+|
+ Input address primary number matched to DPV but secondary number missing.
+|@
+ 
+  M1
+|
+ Input address primary number missing.
+|@
+ 
+  M3
+|
+ Input address primary number invalid.
+|@
+ 
+  P1
+|
+ Input address PO, RR or HC box number missing.
+|@
+ 
+  P3
+|
+ Input address PO, RR or HC box number invalid.
+|@
+ 
+  RR
+|
+ Input address matched to CMRA.
+|@
+ 
+  R1
+|
+ Input address matched to CMRA but secondary number not present.
+|@
+ 
+  F1
+|
+ Address was coded to a military address.
+|@
+ 
+  G1
+|
+ Address was coded to a General Delivery address.
+|@
+ 
+  U1
+|
+ Address was coded to a unique Zip Code.
+|@
+ 
+ 01
+|
+ Blank Field
+|@
+ 
+ 02
+|
+ Truncated Data
+|@
+ 
+ 04
+|
+ Lost Data
+|@
+ 
+ 08
+|
+ Questionable Record
+|@
+ 
+ 10
+|
+ Foreign Record
+|@
+ 
+ 20
+|
+ User Tagged Record
+|@
+ 
+ 40
+|
+ Reserved for future use
+|@
+ 
+ 80
+|
+ Reserved for future use
+|@
+ 
+ IS01
+|
+ IP Address Found
+|
+ The IP Address was found in the database.
+|@
+ 
+ IS02
+|
+ IP Address Not Found
+|
+ The IP Address not found in the database.
+|@
+ 
+ IS03
+|
+ Proxy IP Address
+|
+ The IP Address is a proxy.
+|@
+ 
+ IC01
+|
+ White Space Removed
+|
+ The IP Address had white space removed.
+|@
+ 
+ IE01
+|
+ Empty or Malformed
+|
+ The IP Address was empty or not well formed.
+|@
+ 
+ IE02
+|
+ Not Initialized (Demo/Expired)
+|
+ The Object could not be Initialized. This is possibly due to: demo mode, expired data, or an expired License Key.
+|@
+ 
+  100
+|
+ Unrecognized ZIP Code.
+|@
+ 
+  101
+|
+ Unrecognized city or state.
+|@
+ 
+  102
+|
+ Unrecognized county or state.
+|@
+ 
+  103
+|
+ Unrecognized address.
+|@
+ 
+  104
+|
+ User ID or password not recognized.
+|@
+ 
+  106
+|
+ Invalid user information.
+|@
+ 
+  108
+|
+ Order failed, please try later.
+|@
+ 
+  109
+|
+ Insufficient geographic input.
+|@
+ 
+  111
+|
+ Request exceeds 100,000 record maximum.
+|@
+ 
+  112
+|
+ Unrecognized state.
+|@
+ 
+  113
+|
+ Error, please try again.
+|@
+ 
+  115
+|
+ For the Radius geography type, please enter a number of records.
+|@
+ 
+  116
+|
+ Sorry, you don’t have permission to access this service.
+|@
+ 
+  117
+|
+ ZIP Code is not a valid input for the requested geography type.
+|@
+ 
+  121
+|
+ The list cannot be used more than 5 times.
+|@
+ 
+  122
+|
+ Order count exceeds 65,535 record maximum for Excel files.
+|@
+ 
+  123
+|
+ Invalid option.
+|@
+ 
+  124
+|
+ Order count exceeds 65,535 record maximum for comma limited files.
+|@
+ 
+  100
+|
+ Unrecognized ZIP Code.
+|@
+ 
+  101
+|
+ Unrecognized city or state.
+|@
+ 
+  102
+|
+ Unrecognized county or state.
+|@
+ 
+  103
+|
+ Unrecognized address.
+|@
+ 
+  104
+|
+ User ID or password not recognized.
+|@
+ 
+  105
+|
+ Email address or password not recognized.
+|@
+ 
+  106
+|
+ Invalid user information.
+|@
+ 
+  107
+|
+ Please specify order quantity.
+|@
+ 
+  108
+|
+ Order failed, please try later.
+|@
+ 
+  109
+|
+ Insufficient geographic input.
+|@
+ 
+  110
+|
+ Request exceeds 50 miles maximum radius.
+|@
+ 
+  111
+|
+ Request exceeds 100,000 record maximum.
+|@
+ 
+  112
+|
+ Unrecognized state.
+|@
+ 
+  113
+|
+ Error, please try again.
+|@
+ 
+  114
+|
+ Carrier routes are not a valid input for the requested geography type.
+|@
+ 
+  115
+|
+ For the Radius geography type, please enter either a number of records or a radius in miles.
+|@
+ 
+  116
+|
+ Sorry, you don’t have permission to access this service.
+|@
+ 
+  117
+|
+ ZIP Code is not a valid input for the requested geography type.
+|@
+ 
+  118
+|
+ Carrier route format should be carrier_route dash ZIP (“C001-92688”).
+|@
+ 
+  119
+|
+ ZIP Code or carrier route are the only valid inputs for this geography type.
+|@
+ 
+  120
+|
+ Please set occupant options to proceed.
+|@
+ 
+  121
+|
+ The list cannot be used more than 5 times.
+|@
+ 
+  122
+|
+ Order count exceeds 65,535 record maximum for Excel files.
+|@
+ 
+ MS01
+|
+ Unique Record
+|
+ The record did not match any other records.
+|@
+ 
+ MS02
+|
+ Has Duplicates
+|
+ The record matched other records and was tagged as the output record.
+|@
+ 
+ MS03
+|
+ Is Duplicate
+|
+ The record matched other records and was tagged as a duplicate.
+|@
+ 
+ MS04
+|
+ Record Suppressed
+|
+ ETL Only. The source record was suppressed.
+|@
+ 
+ MS05
+|
+ Record Not Intersected
+|
+ ETL Only. The source record was not intersected.
+|@
+ 
+ MS06
+|
+ Match: Rule 1
+|
+ Records were matched by matchcode combination 1.
+|@
+ 
+ MS07
+|
+ Match: Rule 2
+|
+ Records were matched by matchcode combination 2.
+|@
+ 
+ MS08
+|
+ Match: Rule 3
+|
+ Records were matched by matchcode combination 3.
+|@
+ 
+ MS09
+|
+ Match: Rule 4
+|
+ Records were matched by matchcode combination 4.
+|@
+ 
+ MS10
+|
+ Match: Rule 5
+|
+ Records were matched by matchcode combination 5.
+|@
+ 
+ MS11
+|
+ Match: Rule 6
+|
+ Records were matched by matchcode combination 6.
+|@
+ 
+ MS12
+|
+ Match: Rule 7
+|
+ Records were matched by matchcode combination 7.
+|@
+ 
+ MS13
+|
+ Match: Rule 8
+|
+ Records were matched by matchcode combination 8.
+|@
+ 
+ MS14
+|
+ Match: Rule 9
+|
+ Records were matched by matchcode combination 9.
+|@
+ 
+ MS15
+|
+ Match: Rule 10
+|
+ Records were matched by matchcode combination 10.
+|@
+ 
+ MS16
+|
+ Match: Rule 11
+|
+ Records were matched by matchcode combination 11.
+|@
+ 
+ MS17
+|
+ Match: Rule 12
+|
+ Records were matched by matchcode combination 12.
+|@
+ 
+ MS18
+|
+ Match: Rule 13
+|
+ Records were matched by matchcode combination 13.
+|@
+ 
+ MS19
+|
+ Match: Rule 14
+|
+ Records were matched by matchcode combination 14.
+|@
+ 
+ MS20
+|
+ Match: Rule 15
+|
+ Records were matched by matchcode combination 15.
+|@
+ 
+ MS21
+|
+ Match: Rule 16
+|
+ Records were matched by matchcode combination 16.
+|@
+ 
+ MS30
+|
+ Suppressor Record
+|
+ ETL Only. The lookup record suppressed a source record.
+|@
+ 
+ MS31
+|
+ Intersector Record
+|
+ ETL Only. The lookup record intersected a source record.
+|@
+ 
+ NS01
+|
+ Parsing Successful
+|
+ Name parsing was successful.
+|@
+ 
+ NS02
+|
+ Error Parsing
+|
+ An error was detected. Please check for a name error code.
+|@
+ 
+ NS03
+|
+ First Name Spelling Corrected
+|
+ The spelling in the first name field was corrected.
+|@
+ 
+ NS04
+|
+ First Name 2 Spelling Corrected
+|
+ The spelling in the second first name field was corrected.
+|@
+ 
+ NS05
+|
+ First Name 1 Found
+|
+ FirstName1 was found in our census table of names. Very likely to be a real first name.
+|@
+ 
+ NS06
+|
+ Last Name 1 Found
+|
+ LastName1 was found in our census table of names. Very likely to be a real last name.
+|@
+ 
+ NS07
+|
+ First Name 2 Found
+|
+ FirstName2 was found in our census table of names. Very likely to be a real first name.
+|@
+ 
+ NS08
+|
+ Last Name 2 Found
+|
+ LastName2 was found in our census table of names. Very likely to be a real last name.
+|@
+ 
+ NS99
+|
+ Company Name Standardized
+|
+ The company name was standardized.
+|@
+ 
+ NE01
+|
+ Unrecognized Format
+|
+ Two names were detected but the FullName string was not in a recognized format.
+|@
+ 
+ NE02
+|
+ Multiple First Names Detected
+|
+ Multiple first names were detected and could not be accurately genderized.
+|@
+ 
+ NE03
+|
+ Vulgarity Detected
+|
+ A vulgarity was detected in the name.
+|@
+ 
+ NE04
+|
+ Suspicious Word Detected
+|
+ The name contained words found on the list of nuisance names, such as "Mickey Mouse."
+|@
+ 
+ NE05
+|
+ Company Name Detected
+|
+ The name contained words normally found in a company name.
+|@
+ 
+ NE06
+|
+ Non-Alphabetic Character Detected
+|
+ The name contained a non-alphabetic character.
+|@
+ 
+ NE08
+|
+ Unicode/Non-Latin Name Input
+|
+ Unicode characters detected on input. We do not support Unicode at this time; the input is returned as-is.
+|@
+ 
+ NE99
+|
+ Company Standardization Not Needed
+|
+ Company name standardization was attempted, but did not produce a different result.
+|@
+ 
+ DA00
+|
+ Address Appended
+|
+ An address was changed or appended.
+|@
+ 
+ DA01
+|
+ City/State Append from Phone
+|
+ A city or state was appended from a phone number wire center.
+|@
+ 
+ DA10
+|
+ Name Appended
+|
+ A full name was changed or  appended.
+|@
+ 
+ DA20
+|
+ Company Appended
+|
+ A company name was changed or appended.
+|@
+ 
+ DA30
+|
+ Phone Appended
+|
+ A phone number was changed or appended.
+|@
+ 
+ DA40
+|
+ Email Appended
+|
+ An email address was changed or appended.
+|@
+ 
+ VR01
+|
+ Individual and Address Match
+|
+ The individual name and address match.
+|@
+ 
+ VR02
+|
+ Individual and Phone Match
+|
+ The individual name and phone match.
+|@
+ 
+ VR03
+|
+ Individual and Email Match
+|
+ The individual name and email match.
+|@
+ 
+ VR04
+|
+ Address and Phone Match
+|
+ The address and phone match.
+|@
+ 
+ VR05
+|
+ Address and Email Match
+|
+ The address and email match.
+|@
+ 
+ VR06
+|
+ Phone and Email Match
+|
+ The phone and email match.
+|@
+ 
+ VR07
+|
+ Organization and Address Match
+|
+ The organization name and address match.
+|@
+ 
+ VR08
+|
+ Organization and Phone Match
+|
+ The organization name and phone match.
+|@
+ 
+ VR09
+|
+ Organization and Email Match
+|
+ The organization name and email match.
+|@
+ 
+ VR10
+|
+ Organization and Individual Match
+|
+ The organization name and individual name match.
+|@
+ 
+ VR11
+|
+ Name and SSN Match
+|
+ Matched the name field to the Social Security Number.
+|@
+ 
+ VS00
+|
+ Address Not Found
+|
+ An address was not found in the reference data.
+|@
+ 
+ VS01
+|
+ Historical Address Match
+|
+ The current address is outdated and a newer address match was found. Use the "Move" action to get the latest address.
+|@
+ 
+ VS02
+|
+ Partial Address Match
+|
+ A match was made to a partial address. This could be due to matching the street address but not to the suite.
+|@
+ 
+ VS12
+|
+ Last Name Match
+|
+ A match was made to the last name only.
+|@
+ 
+ VS13
+|
+ First Name Match
+|
+ A match was made to the first name only.
+|@
+ 
+ VS22
+|
+ Partial Company Name Match
+|
+ A match was made to a partial company name.
+|@
+ 
+ VS30
+|
+ Phone Not Found
+|
+ A phone number was not found in the reference data.
+|@
+ 
+ VS31
+|
+ Historical Phone Match
+|
+ The current phone number is outdated and a newer phone number match was found. Use the "Append" action to get the latest phone number.
+|@
+ 
+ VS40
+|
+ Email Not Found
+|
+ An email address was not found in the reference data.
+|@
+ 
+ VS41
+|
+ Historical Email Address
+|
+ The current email address is outdated and a newer email address match was found. Use the "Append" action to get the latest email address.
+|@
+ 
+ VS50
+|
+ Last4 Only Match
+|
+ The name only matched to the last 4 digits of the Social Security Number.
+|@
+ 
+ PS01
+|
+ Full Match
+|
+ The phone number has been verified as valid.
+|@
+ 
+ PS02
+|
+ 7-Digit Match
+|
+ The first 7-digits of the phone number have been verified, but activity cannot be confirmed.
+|@
+ 
+ PS03
+|
+ Corrected Area Code
+|
+ NewAreaCode contains corrected area code that was changed according to the postal code it falls into.
+|@
+ 
+ PS04
+|
+ Demo Mode
+|
+ Demo mode is active and the phone number is outside the range of phone numbers allowed by the Demo.
+|@
+ 
+ PS05
+|
+ Database Expired
+|
+ The phone database is expired. Please update your data.
+|@
+ 
+ PS06
+|
+ Updated Area Code
+|
+ The area code was changed due to an area code split. The updated code is located within NewAreaCode.
+|@
+ 
+ PS07
+|
+ Reported Cellular Line
+|
+ On activation, the exchange type of the phone number was designated as a cellular number, but current status cannot be confirmed.
+|@
+ 
+ PS08
+|
+ Reported Land Line
+|
+ On activation, the exchange type of the phone number was designated as a land line, but current status cannot be confirmed.
+|@
+ 
+ PS09
+|
+ Reported VOIP Line
+|
+ On activation, the exchange type of the phone number was designated as a VOIP line, but current status cannot be confirmed.
+|@
+ 
+ PS10
+|
+ Residential Number
+|
+ The phone number belongs to a residence.
+|@
+ 
+ PS11
+|
+ Business Number
+|
+ The phone number belongs to a business.
+|@
+ 
+ PS12
+|
+ SOHO Number
+|
+ The phone number belongs to a small office or home office.
+|@
+ 
+ PS13
+|
+ Toll Free Number
+|
+ Global Phone Object Only. The phone number is a toll free number.
+|@
+ 
+ PS14
+|
+ Special Number
+|
+ Global Phone Object Only. This is a phone number with premium service, data, internet access, etc. which all incur a higher charge rate.
+|@
+ 
+ PS15
+|
+ Misc Phone Type
+|
+ The phone number is used for other services (calling cards, national numbers, directory assistance, mass communications, etc.)
+|@
+ 
+ PS16
+|
+ Unknown Phone Type
+|
+ Phone type is unknown due to external errors. Please try again at another time.
+|@
+ 
+ PS17
+|
+ Live number
+|
+ Phone is live, callable and/or able to receive SMS.
+|@
+ 
+ PS20
+|
+ Verified Number (Low Confidence)
+|
+ Number exists within a block of registered phone numbers.
+|@
+ 
+ PS21
+|
+ Verified Number (Medium Confidence)
+|
+ Number was found to already be validated in our phone database.
+|@
+ 
+ PS22
+|
+ Verified Number (High Confidence)
+|
+ Number was verified against current dialing equipment.
+|@
+ 
+ PS30
+|
+ Premium Timeout
+|
+ Querying Premium has timed out, but has continued to run in the background. Query later to obtain the cached results.
+|@
+ 
+ PS31
+|
+ CallerID Timeout
+|
+ Querying CallerID has timed out, but has continued to run in the background. Query later to obtain the cached results.
+|@
+ 
+ PE01
+|
+ Bad Area Code/Bad Phone Number
+|
+ The area code/phone number does not exist in our database or contains non-numbers.
+|@
+ 
+ PE02
+|
+ Blank Phone Number
+|
+ The phone number is blank.
+|@
+ 
+ PE03
+|
+ Bad Phone Number
+|
+ The phone number has too many or too few digits.
+|@
+ 
+ PE04
+|
+ Multiple Match
+|
+ Two or more possible area codes are available as a fix and their distance is too close to choose one over the other.
+|@
+ 
+ PE05
+|
+ Bad Prefix/Prefix +1
+|
+ The phone prefix or first 7-digits do not exist in our database.
+|@
+ 
+ PE06
+|
+ Bad Postal Code
+|
+ The input postal code is invalid.
+|@
+ 
+ PE08
+|
+ No Country Input
+|
+ Global Phone Object Only. The input country is blank and the phone number has no '+' sign.
+|@
+ 
+ PE09
+|
+ Out of Range Suffix
+|
+ Global Phone Object Only. The subscriber's phone number suffix is out of range.
+|@
+ 
+ PE10
+|
+ Invalid Input Country
+|
+ Global Phone Object Only. The input country in not valid.
+|@
+ 
+ PE11
+|
+ Disabled Phone Number
+|
+ The phone number has been found previously active on a network, but has not connected to the network after a period of time.
+|@
+ 
+ PC01
+|
+ Country Changed
+|
+ Global Phone Only. The country was added or changed to correspond to the phone number.
+|@
+ 
+ QS01
+|
+ Empty Value
+|
+ The value is empty or contains only spaces.
+|@
+ 
+ QS02
+|
+ NULL Value
+|
+ The value is NULL.
+|@
+ 
+ QS03
+|
+ Default Value
+|
+ The value is equal to the user-specified default.
+|@
+ 
+ QS04
+|
+ Non-Printing Characters
+|
+ The value contains non-printing characters (e.g. printer control characters, etc.)
+|@
+ 
+ QS05
+|
+ Diacritic Characters
+|
+ The value contains diacritic characters (e.g. accented characters.)
+|@
+ 
+ QS06
+|
+ Non-English Characters
+|
+ The value contains non-English characters.
+|@
+ 
+ QS07
+|
+ Decorative Characters
+|
+ The value contains decorative characters. Decorative characters are tabs, commas, or double quotes, found in the beginning or ending of the value. This may indicate an import issue where delimiters made their way into the value being evaluated.
+|@
+ 
+ QS08
+|
+ Alphabetic Characters
+|
+ The value contains only alphabetic characters.
+|@
+ 
+ QS09
+|
+ Numeric Characters
+|
+ The value contains only numeric characters.
+|@
+ 
+ QS10
+|
+ Alphabetic and Numeric Characters
+|
+ The value contains both alphabetic and numeric characters.
+|@
+ 
+ QS11
+|
+ Upper-Case Alphabetic Characters
+|
+ The value contains only upper-case alphabetic characters, and may contain non-alphabetic characters.
+|@
+ 
+ QS12
+|
+ Lower-Case Alphabetic Characters
+|
+ The value contains only lower-case alphabetic characters, and may contain non-alphabetic characters.
+|@
+ 
+ QS13
+|
+ Upper and Lower Alphabetic Characters
+|
+ The value contains both upper and lower-case alphabetic characters, and may contain non-alphabetic characters.
+|@
+ 
+ QS14
+|
+ Single Space
+|
+ Only a single space separates the words in value.
+|@
+ 
+ QS15
+|
+ Multiple Spaces
+|
+ Multiple spaces separate the words in value.
+|@
+ 
+ QS16
+|
+ Leading Spaces
+|
+ The value contains leading spaces.
+|@
+ 
+ QS17
+|
+ Trailing Spaces
+|
+ The value contains trailing spaces.
+|@
+ 
+ QS18
+|
+ Profanity
+|
+ The value contains profanity.
+|@
+ 
+ QS19
+|
+ 2-digit Year
+|
+ The date/time value lacks the year's century.
+|@
+ 
+ QS20
+|
+ Inconsistent Name
+|
+ The name value contains a name where the order is inconsistent with the user-specified data type.
+|@
+ 
+ QS21
+|
+ Multiple Names
+|
+ The name value contains more than one contact name.
+|@
+ 
+ QS22
+|
+ Suspicious Name
+|
+ The name value contains a suspicious name.
+|@
+ 
+ QS30
+|
+ Non-Standard State/Province
+|
+ The State/Province value contains a non-standard US state or Canadian province (i.e. not the official postal abbreviation).
+|@
+ 
+ QS40
+|
+ 5-digit ZIP/Postal Code
+|
+ The ZIP/Postal Code value has a 5-digit Zip Code with no Plus 4.
+|@
+ 
+ QS50
+|
+ Unrecognized Country ISO
+|
+ The country value does not match any standard ISO country representation.
+|@
+ 
+ QS60
+|
+ Mobile Domain
+|
+ The e-mail value contains a mobile (cell phone) domain.
+|@
+ 
+ QS61
+|
+ Spam Trap Domain
+|
+ The e-mail value contains a known spam trap domain.
+|@
+ 
+ QS62
+|
+ Disposable Domain
+|
+ The e-mail value contains a known 'disposable' domain.
+|@
+ 
+ QE01
+|
+ Illegal UTF-8 Byte Sequence
+|
+ The value contains an illegal UTF-8 byte sequence.
+|@
+ 
+ QE03
+|
+ Invalid Integer
+|
+ The value's integer value is invalid.
+|@
+ 
+ QE04
+|
+ Invalid Decimal
+|
+ The value's decimal value is invalid.
+|@
+ 
+ QE05
+|
+ Invalid Floating Point
+|
+ The value's floating point value is invalid.
+|@
+ 
+ QE06
+|
+ Invalid Date/Time
+|
+ The value's date/time value is invalid.
+|@
+ 
+ QE07
+|
+ Invalid Boolean Value
+|
+ The value's boolean value is invalid.
+|@
+ 
+ QE08
+|
+ Over Range
+|
+ The value is above the user-specified range.
+|@
+ 
+ QE09
+|
+ Under Range
+|
+ The value is below the user-specified range.
+|@
+ 
+ QE10
+|
+ Length Size Exceeded
+|
+ The value's length exceeds the user-specified size.
+|@
+ 
+ QE11
+|
+ Precision Exceeded
+|
+ The value's precision exceeds the user-specified precision.
+|@
+ 
+ QE12
+|
+ Precision Scale Exceeded
+|
+ The value's precision exceeds the user-specified scale.
+|@
+ 
+ QE13
+|
+ No Regular Expression Match
+|
+ The value does not match any of the user-specified regular expressions.
+|@
+ 
+ QE14
+|
+ Data Type Mismatch
+|
+ The value is inconsistent with the user-specified DataType (e.g. an address field containing a phone number.)
+|@
+ 
+ QE30
+|
+ Unrecognized State/Province
+|
+ The value contains an unrecognized state or province.
+|@
+ 
+ QE40
+|
+ Invalid ZIP Code
+|
+ The value contains a US ZIP code that is not valid (only the 5 digit zip is validated in this way.) This is returned only when getting the results for a column with a data type set as DataTypeZipOrPostalCode.
+|@
+ 
+ QE41
+|
+ Invalid Postal Code
+|
+ The value contains a Canadian Postal Code that is not valid. This is returned only when getting the results for a column with a data type set as DataTypeZipOrPostalCode.
+|@
+ 
+ QE42
+|
+ ZIP Code Mismatch
+|
+ The value's Zip Code does not correctly correspond to the specified US State. This is returned only when getting the results for a column with a data type set as DataTypeStateOrProvince.
+|@
+ 
+ QE43
+|
+ Postal Code Mismatch
+|
+ The value's Postal Code does not correctly correspond to the specified Canadian Province. This is returned only when getting the results for a column with a data type set as DataTypeStateOrProvince.
+|@
+ 
+ QE50
+|
+ Unrecognized Country
+|
+ The value contains an unrecognized country name.
+|@
+ 
+ QE60
+|
+ Incorrect E-mail Syntax
+|
+ The value contains an e-mail address with an incorrect syntax.
+|@
+ 
+ QE61
+|
+ Misspelled Domain
+|
+ The value contains an e-mail with a misspelled domain.
+|@
+ 
+ QE70
+|
+ Unrecognizable Phone
+|
+ The value contains an unrecognizable phone number.
+|@
+ 
+ SN01
+|
+ Invalid SSN Format
+|
+ The format of your Social Security Number was invalid.
+|@
+ 
+ SP01
+|
+ No Action
+|
+ A record was sent in, but the service did not have enough information to modify the record.
+|@
+ 
+ SS01
+|
+ No Action
+|
+ A record was sent in, but the service did not have enough information to modify the record.
+|@
+ 
+ US01
+|
+ Match Found
+|
+ A match was found in the data.
+|@
+ 
+ UE01
+|
+ No Match
+|
+ No match was found.
+|@
+ 
+ UE02
+|
+ Record Limit Exceeded
+|
+ Number of records returned by the Web Service is too many. Please refine your search.
+|@
+ 
+ UE03
+|
+ Invalid Page Number
+|
+ The requested Page Number is invalid or not within the possible number of pages. Refer to the TotalPages Output Column to determine the total number of pages possible.
+|@
+ 
+ UE04
+|
+ No Exact Matches
+|
+ No exact matches found for SearchCondition:Exact. However, results will be returned for a loose search (SearchCondition:Loose).
+|@
+ 
+ UE05
+|
+ Invalid State or Zip
+|
+ Invalid State or Zip.
+|@
+ 
+ UE06
+|
+ Name Character Limit Exceeded
+|
+ The FirstName or LastName exceeded 30 characters.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="YS_-_Property_Status">YS - Property Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ YS01
+|
+ APN Match
+|
+ An APN match was found.
+|@
+ 
+ YS02
+|
+ Address Match
+|
+ An Address match was found.
+|@
+ 
+ YS03
+|
+ Basic Information
+|
+ The basic information was returned.
+|@
+ 
+ YS04
+|
+ Detailed Information
+|
+ The detailed information was returned.
+|@
+ 
+ YS05
+|
+ Multiple Matches
+|
+ More than one match was found.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="YE_-_Property_Error">YE - Property Error</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ YE01
+|
+ No Address
+|
+ No FIPS, APN, or AddressKey was provided.
+|@
+ 
+ YE02
+|
+ No Match
+|
+ No match was found.
+|@
+ 
+ YE03
+|
+ Invalid Address
+|
+ The FIPS, APN, or AddressKey provided was invalid.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="YC_-_Property_Change">YC - Property Change</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ YCXX
+|
+ Count Reporting
+|
+ Reports back "XX" number of records found during lookup. Best record found is returned.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="DS_-_Residential.2FBusiness_Delivery_Indicator">DS - Residential/Business Delivery Indicator</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ DS01
+|
+ Residential Address
+|
+ The processed address is a residential address.
+|@
+ 
+ DS02
+|
+ Business Address
+|
+ The processed address is a business address.
+|@
+ 
+ DS03
+|
+ Unknown Address Type
+|
+ The address type could not be determined for the current address.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="RS_-_RightFielder_Status">RS - RightFielder Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ RS01
+|
+ Parse Successful
+|
+ The parse was successful.
+|@
+ 
+ RS02
+|
+ Foreign Address Detected
+|
+ The detected country was one that is not supported by RightFielder.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="RE_-_RightFielder_Error">RE - RightFielder Error</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ RE01
+|
+ Unrecognized Data Present
+|
+ The return value of the GetUnrecognized function has been populated.
+|@
+ 
+ RE02
+|
+ Incomplete Data
+|
+ The input string did not contain a complete and verifiable address.
+|@
+ 
+ RE03
+|
+ Demo Mode
+|
+ Rightfielder is in demo mode. This is due to an invalid or expired License Key, or expired database.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="CS_-_SmartMover_Status">CS - SmartMover Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ CS01
+|
+ Move with New Address
+|
+ The record is a 'move' and a new 'moved to' address was provided.
+|@
+ 
+ CS02
+|
+ Standardized Address
+|
+ The record is not a 'move' but was standardized.
+|@
+ 
+ CS03
+|
+ Move Input Requirements not Satisfied
+|
+ The record is matched to change of address file but did not satisfy all requirements to produce a 'moved to' address.
+|@
+ 
+ CS04
+|
+ Move but No New Address
+|
+ he record is a 'move' but could not provide a 'moved to' address.
+|@
+ 
+ CS10
+|
+ Individual Move
+|
+ The record is classified as an individual.
+|@
+ 
+ CS11
+|
+ Family Move
+|
+ The record is classified as a family.
+|@
+ 
+ CS12
+|
+ Business Move
+|
+ The record is classified as a business.
+|@
+ 
+ CS13
+|
+ Daily Delete
+|
+ The record is a Daily Delete address. COA with this address is pending deletion from the master file and no mail may be forwarded from this address.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="CM_-_SmartMover_Match_Status">CM - SmartMover Match Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ CM01
+|
+ COA Match
+|
+ A COA was found for an Individual, Business, or Family.
+|@
+ 
+ CM02
+|
+ Foreign Move
+|
+ A COA was found for a Foreign Move. No forwarding address was provided.
+|@
+ 
+ CM03
+|
+ Moved no Forwarding
+|
+ A COA was found. The customer moved and left no forwarding address (MLNA).
+|@
+ 
+ CM04
+|
+ Box Closed
+|
+ A COA was found. The Post Box was closed with no order filed by the customer (BCNO).
+|@
+ 
+ CM05
+|
+ Cannot Match Secondary
+|
+ The COA could not be matched because the street address does not match with the secondary number.
+|@
+ 
+ CM06
+|
+ DPBC Ambiguous
+|
+ The COA could not be converted to a deliverable address because the 11-digit zip code represents more than one delivery point.
+|@
+ 
+ CM07
+|
+ Conflicting Middle Name
+|
+ The COA could not be matched because there is more than one COA record for the match and the middle names or initials on the COAs are different.
+|@
+ 
+ CM08
+|
+ Conflicting Gender
+|
+ The COA could not be matched because there is more than one COA record for the match and the genders of the names on the COAs are different.
+|@
+ 
+ CM09
+|
+ Conflicting Instructions
+|
+ The COA could not be matched because two potential matches were compared and had differences in the new addresses.
+|@
+ 
+ CM10
+|
+ Cannot Match High-rise Default
+|
+ The COA could not be matched because the input record is a potential match to a family COA record from a multi-unit building, but the address zip + 4 coded to the building default. This requires individual name matching logic to obtain a match and the individual names did not match.
+|@
+ 
+ CM11
+|
+ Cannot Match Rural Default
+|
+ The COA could not be matched because the input record is a potential match to a family COA record from a Rural Route or Highway Contract Route address. This requires individual name matching logic to obtain a match and the individual names did not match.
+|@
+ 
+ CM12
+|
+ Insufficient Name
+|
+ The COA could not be matched because there is a COA record with the same surname and address but there is insufficient first/middle name information on the COA record to product a match using individual matching logic.
+|@
+ 
+ CM13
+|
+ Middle Name Test Failed
+|
+ The COA could not be matched because the input name contains a conflict with the middle name or initials on the COA record.
+|@
+ 
+ CM14
+|
+ Gender Conflict
+|
+ The COA could not be matched because the gender of the name on the input record conflicts with the gender of the name on the COA record.
+|@
+ 
+ CM15
+|
+ Cannot Convert Address
+|
+ The COA was found but the new address would not convert at run time.
+|@
+ 
+ CM16
+|
+ Individual Name Insufficient
+|
+ The COA could not be matched because the input middle initial/name is missing or does not equal the middle initial/name on the potential COA match.
+|@
+ 
+ CM17
+|
+ Secondary Discrepancy
+|
+ The COA could not be matched because there is conflicting secondary information on the input and COA record or the input record contained secondary information and matched to a family record that does not contain secondary information.
+|@
+ 
+ CM18
+|
+ Other Insufficient Name
+|
+ The COA could not be matched because the input middle initial/name is missing or different from the middle name on the COA. A match cannot be made because the first name on the COA was truncated and the middle names must be equal in order to make this match.
+|@
+ 
+ CM19
+|
+ Cannot Match General Delivery
+|
+ The COA could not be matched for general delivery.
+|@
+ 
+ CM20
+|
+ No ZIP + 4,  Not Confirmable, or Temporary
+|
+ The COA was found but the new address either: does not have a ZIP+4 coded and therefore there is no 11-digit DPBC, the primary number cannot be confirmed on DPV, or is temporary.
+|@
+ 
+ CM21
+|
+ Conflicting Directions
+|
+ The address could not be updated due to multiple matches.
+|@
+ 
+ CM22
+|
+ Input Missing Suite
+|
+ Input address missing suite data. Can still be matched.
+|@
+ 
+ CM23
+|
+ Secondary Dropped from Input
+|
+ The secondary number was dropped from the input address.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="FS_-_Business.2FFirm_Status">FS - Business/Firm Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ FS01
+|
+ Data Match
+|
+ A match was found in the data.
+|@
+ 
+ FS02
+|
+ Company Match
+|
+ A match was found for the company.
+|@
+ 
+ FS03
+|
+ MAK Match
+|
+ A match was found for the input MAK (Melissa Address Key).
+|@
+ 
+ FS04
+|
+ Address Match
+|
+ A match was found for the input address.
+|@
+ 
+ FS05
+|
+ Phone Match
+|
+ A match was found for the input phone.
+|@
+ 
+ FS06
+|
+ Stock Ticker Match
+|
+ A match was found for the input stock ticker.
+|@
+ 
+ FS07
+|
+ Web Address Match
+|
+ A match was found for the input web address.
+|@
+ 
+ FS08
+|
+ MEK Match
+|
+ A match was found for the input MEK (Melissa Enterprise Key).
+|@</tbody></table>
+<h3> <span class="mw-headline" id="FE_-_Business.2FFirm_Error">FE - Business/Firm Error</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ FE01
+|
+ No Match
+|
+ No match was found.
+|@
+ 
+ FE02
+|
+ Minimum Input Not Met
+|
+ The minimum input requirements were not met. These requirements are:
+<ul><li>Address and City/State or ZIP
+</li><li>Melissa Address Key
+</li><li>Phone
+</li><li>Stock Ticker
+</li><li>Web Address
+</li></ul>
+|@
+ 
+ FE03
+|
+ Multiple Matches
+|
+ Multiple matches were found.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="WS_-_Web_Service_-_Record_Level">WS - Web Service - Record Level</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ WSE00
+|
+ Unexpected Error
+|
+ Your request could not be processed due to an unexpected error. Please retry your request.
+|@
+ 
+ WSC00
+|
+ Internal Configuration Error
+|
+ Your request could not be processed due to an unexpected internal configuration error. Please contact your sales representative.
+|@
+ 
+ WSE03
+|
+ Month Range Exceeded
+|
+ Months to allow for NCOALink products ranges from 6 to 48.
+|@
+ 
+ WSE05
+|
+ Records Array Error
+|
+ Records array is empty, un-allocated, or out of bounds.
+|@
+ 
+ WSE13
+|
+ Requesting Record Range Exceeded
+|
+ Requesting records must in the range of 1 and 500.
+|@
+ 
+ WSE14
+|
+ Field Does Not Exist
+|
+ Ticket or field does not exist in the summary report table.
+|@
+ 
+ WSE15
+|
+ ProcessingType Error
+|
+ OptSmartMoverProcessingType is empty or incorrect type.
+|@
+ 
+ WSE16
+|
+ FreqProcessing Range Exceeded
+|
+ OptSmartMoverListOwnerFreqProcessing ranges from 1 to 52.
+|@
+ 
+ WSE17
+|
+ ListName Character Limit
+|
+ OptSmartMoverListName cannot contain over 30 characters.
+|@
+ 
+ WSE18
+|
+ ListName Invalid Character
+|
+ OptSmartMoverListName contains invalid special characters.<br>It cannot contain any of the following characters \ / * : ? " &lt; &gt; |
+|@
+ 
+ WSE24
+|
+ Invalid Link
+|
+ Invalid link.
+|@
+ 
+ WSE26
+|
+ License Key Error
+|
+ License Key is not valid, License Key is not enabled, or customer's Paf is not on file.
+|@
+ 
+ WSE27
+|
+ License Key Inactive
+|
+ Smart Mover Service is not enabled for this License Key. Please contact your sales representative.
+|@
+ 
+ WSE28
+|
+ Long JobID
+|
+ JobID is too long. It cannot contain over 50 characters.
+|@
+ 
+ WSE29
+|
+ JobID Invalid Character
+|
+ JobID cannot contain some special characters.<br>It cannot contain any of the following characters \/*:?"&lt;&gt; |, non-printing characters or spaces.
+|@
+ 
+ WSE31
+|
+ No JobID
+|
+ JobId is required to open summary reports.
+|@
+ 
+ WSE32
+|
+ Customer PAF Expired
+|
+ Customer PAF expired. Please contact your sales representative.
+|@
+ 
+ WSE33
+|
+ Broker PAF Expired
+|
+ Broker PAF expired. Please contact your sales representative.
+|@
+ 
+ WSE34
+|
+ No PAFID Match
+|
+ PAFID does not match. Please contact your sales representative.
+|@
+ 
+ WSE35
+|
+ No PAFID
+|
+ Under broker customer required PAFID. Please contact your sales representative.
+|@
+ 
+ WSE36
+|
+ Unconfirmed PAFID
+|
+ PAFID has unconfirmed. Please contact your sales representative.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="SS_-_Street_Search_Status">SS - Street Search Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ SS01
+|
+ Records Within Range Returned
+|
+ The street search returned one or more results within the designated range (OptInRangeOnly set to true).
+|@
+ 
+ SS02
+|
+ Records With Street Name Returned
+|
+ The street search returned one or more results with the street name only (OptInRangeOnly set to false).
+|@
+ 
+ SS03
+|
+ First 1000 Streets Returned
+|
+ 1,000 street records were returned, but more than 1,000 were found. Please narrow your search.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="DE_-_Data_Error">DE - Data Error</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ DE
+|
+ Data Field Error
+|
+ The data field was empty.
+|@
+ 
+ DE01
+|
+ Missing or Invalid Input
+|
+ The required input for the service was not met or was in an invalid format.
+|@
+ 
+ DE02
+|
+ No Records Found
+|
+ There was a search error: No records were found.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="ZS_-_ZIP_Search_Status">ZS - ZIP Search Status</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ ZS01
+|
+ Successful Cities in Zip Code Search
+|
+ The search for Cities in Zip Code was successful.
+|@
+ 
+ ZS02
+|
+ Successful Zip Code in City Search
+|
+ The search for Zip Code in City was successful.
+|@
+ 
+ ZS03
+|
+ Successful Cities in State Search
+|
+ The search for Cities in State was successful.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="ZE_-_ZIP_Search_Error">ZE - ZIP Search Error</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ ZE01
+|
+ Required Input Missing
+|
+ The search returned an error: the required input is missing.
+|@
+ 
+ ZE02
+|
+ No Records Found
+|
+ The search returned an error: no records were found.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="Listware_Codes">Listware Codes</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Reference
+</th>@
+ 
+ <span style="display:none;">REF</span>Listware
+|
+ Please see <a href="http://wiki.melissadata.com/index.php?title=Listware%3ACodes" title="Listware:Codes">Listware Codes</a>.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KA_-_Cleanser_Abbreviation">KA - Cleanser Abbreviation</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KA01
+|
+ Abbreviation Change
+|
+ Abbreviation: The input value was changed.
+|@
+ 
+ KA02
+|
+ No Abbreviation Change
+|
+ Abbreviation: The input value was not changed.
+|@
+ 
+ KA03
+|
+ No Abbreviation Trigger
+|
+ Abbreviation: The input value did not trigger the operation.
+|@
+ 
+ KA04
+|
+ Empty Abbreviation
+|
+ Abbreviation: The input value was empty or null and the operation did not process.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KC_-_Cleanser_Casing">KC - Cleanser Casing</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KC01
+|
+ Casing Change
+|
+ Casing: The input value was changed.
+|@
+ 
+ KC02
+|
+ No Casing Change
+|
+ Casing: The input value was not changed.
+|@
+ 
+ KC03
+|
+ No Casing Trigger
+|
+ Casing: The input value did not trigger the operation.
+|@
+ 
+ KC04
+|
+ Empty Casing
+|
+ Casing: The input value was empty or null and the operation did not process.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KE_-_Cleanser_Transform_Expression">KE - Cleanser Transform Expression</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KE01
+|
+ Transform Change
+|
+ Transform: The input value was changed.
+|@
+ 
+ KE02
+|
+ No Transform Change
+|
+ Transform: The input value was not changed.
+|@
+ 
+ KE03
+|
+ No Transform Trigger
+|
+ Transform: The input value did not trigger the operation.
+|@
+ 
+ KE05
+|
+ Invalid Transform
+|
+ Transform: The expression was invalid.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KP_-_Cleanser_Punctuation">KP - Cleanser Punctuation</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KP01
+|
+ Punctuation Change
+|
+ Punctuation: The input value was changed.
+|@
+ 
+ KP02
+|
+ No Punctuation Change
+|
+ Punctuation: The input value was not changed.
+|@
+ 
+ KP03
+|
+ No Punctuation Trigger
+|
+ Punctuation: The input value did not trigger the operation.
+|@
+ 
+ KP04
+|
+ Empty Punctuation
+|
+ Punctuation: The input value was empty or null and the operation did not process.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KR_-_Cleanser_Regular_Expression">KR - Cleanser Regular Expression</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KR01
+|
+ Regular Expression Change
+|
+ Regular Expression: The input value was changed.
+|@
+ 
+ KR02
+|
+ No Regular Expression Change
+|
+ Regular Expression: The input value was not changed.
+|@
+ 
+ KR03
+|
+ No Regular Expression Trigger
+|
+ Regular Expression: The input value did not trigger the operation.
+|@
+ 
+ KR04
+|
+ Empty Regular Expression
+|
+ Regular Expression: The input value was empty or null and the operation did not process.
+|@
+ 
+ KR05
+|
+ Invalid Regular Expression
+|
+ Regular Expression: The expression was invalid.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KS_-_Cleanser_Search_and_Replace">KS - Cleanser Search and Replace</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KS01
+|
+ Search Change
+|
+ Search And Replace: The input value was changed.
+|@
+ 
+ KS02
+|
+ No Search Change
+|
+ Search And Replace: The input value was not changed.
+|@
+ 
+ KS03
+|
+ No Search Trigger
+|
+ Search And Replace: The input value did not trigger the operation.
+|@
+ 
+ KS04
+|
+ Empty Search
+|
+ Search And Replace: The input value was empty or null and the operation did not process.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="KV_-_Verification_Match">KV - Verification Match</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ KV01
+|
+ Address matched
+|
+ Complete match found for address
+|@
+ 
+ KV10
+|
+ Postal code matched
+|
+ Complete match found for postal code
+|@
+ 
+ KV11
+|
+ Administrative area (state/province) matched
+|
+ Complete match found for administrative area (state/province)
+|@
+ 
+ KV12
+|
+ Locality matched
+|
+ Complete match found for locality
+|@
+ 
+ KV13
+|
+ Thoroughfare/street matched
+|
+ Complete match found for thoroughfare
+|@
+ 
+ KV14
+|
+ Premise/house number matched
+|
+ Complete match found for premise/house number
+|@
+ 
+ KV15
+|
+ Subpremise matched
+|
+ Complete match found for subpremise
+|@
+ 
+ KV02
+|
+ National ID matched
+|
+ Complete match found for national ID
+|@
+ 
+ KV03
+|
+ First/given/forename matched
+|
+ Complete match found for first/given/surname name
+|@
+ 
+ KV04
+|
+ Last/surname matched
+|
+ Complete match found for last/surname
+|@
+ 
+ KV05
+|
+ Phone number matched
+|
+ Complete match found for phone number
+|@
+ 
+ KV50
+|
+ Last 4 digits of phone matched
+|
+ Match found for the last 4 digits of the phone number
+|@
+ 
+ KV06
+|
+ Email matched
+|
+ Complete match found for the email address
+|@
+ 
+ KV07
+|
+ Date of birth matched
+|
+ Complete match found for the date of birth
+|@
+ 
+ KV70
+|
+ Day of birth matched
+|
+ Match found for the day of birth
+|@
+ 
+ KV71
+|
+ Month of birth matched
+|
+ Match found for the month of birth
+|@
+ 
+ KV72
+|
+ Year of birth matched
+|
+ Match found for the year of birth
+|@
+ 
+ KV08
+|
+ Organization matched
+|
+ Complete match found for the organization/company
+|@
+</tbody></table>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="HouseholdIncome">HouseholdIncome</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ ID01
+|
+ $0-$15,000
+|@
+ 
+ ID02
+|
+ $15,001-$20,000
+|@
+ 
+ ID03
+|
+ $20,001-$30,000
+|@
+ 
+ ID04
+|
+ $30,001-$40,000
+|@
+ 
+ ID05
+|
+ $40,001-$50,000
+|@
+ 
+ ID06
+|
+ $50,001-$60,000
+|@
+ 
+ ID07
+|
+ $60,001-$75,000
+|@
+ 
+ ID08
+|
+ $75,001-$100,000
+|@
+ 
+ ID09
+|
+ $100,001-$125,000
+|@
+ 
+ ID10
+|
+ $125,001-$150,000
+|@
+ 
+ ID11
+|
+ $150,001+
+|@</tbody></table>
+<h3> <span class="mw-headline" id="LengthOfResidence">LengthOfResidence</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ LD00
+|
+ Less than 1 year
+|@
+ 
+ LD01
+|
+ 1-2 years
+|@
+ 
+ LD02
+|
+ 2-3 years
+|@
+ 
+ LD03
+|
+ 3-4 years
+|@
+ 
+ LD04
+|
+ 4-5 years
+|@
+ 
+ LD05
+|
+ 5-6 years
+|@
+ 
+ LD06
+|
+ 6-7 years
+|@
+ 
+ LD07
+|
+ 7-8 years
+|@
+ 
+ LD08
+|
+ 8-9 years
+|@
+ 
+ LD09
+|
+ 9-10 years
+|@
+ 
+ LD10
+|
+ 10-11 years
+|@
+ 
+ LD11
+|
+ 11-12 years
+|@
+ 
+ LD12
+|
+ 12-13 years
+|@
+ 
+ LD13
+|
+ 13-14 years
+|@
+ 
+ LD14
+|
+ 14-15 years
+|@
+ 
+ LD15
+|
+ 15+ years
+|@</tbody></table>
+<h3> <span class="mw-headline" id="PresenceOfChildren">PresenceOfChildren</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ CD01
+|
+ No Children Present
+|@
+ 
+ CD02
+|
+ Children Present
+|@</tbody></table>
+<h3> <span class="mw-headline" id="MaritalStatus">MaritalStatus</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ MD01
+|
+ Definitely Single
+|@
+ 
+ MD02
+|
+ Inferred Single
+|@
+ 
+ MD03
+|
+ Inferred Married
+|@
+ 
+ MD04
+|
+ Definitely Married
+|@</tbody></table>
+<h3> <span class="mw-headline" id="DateOfDeath">DateOfDeath</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ DD00
+|
+ Not Deceased
+|@
+ 
+ DD01
+|
+ Deceased
+|@</tbody></table>
+<h3> <span class="mw-headline" id="DemographicsGender">DemographicsGender</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ GD01
+|
+ Male
+|@
+ 
+ GD02
+|
+ Female
+|@
+ 
+ GD03
+|
+ Neutral
+|@</tbody></table>
+<h3> <span class="mw-headline" id="OwnRent">OwnRent</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ RD01
+|
+ Definite Renter
+|@
+ 
+ RD02
+|
+ Inferred Renter
+|@
+ 
+ RD03
+|
+ Inferred Owner
+|@
+ 
+ RD04
+|
+ Definite Owner
+|@</tbody></table>
+<h3> <span class="mw-headline" id="Occupation">Occupation</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th style="border-right:0px;">Description
+</th>@
+ 
+ WD01
+|
+ Physician/Dentist
+|@
+ 
+ WD02
+|
+ Healthcare
+|@
+ 
+ WD03
+|
+ Lawyer/Judge
+|@
+ 
+ WD04
+|
+ Professional/Technical
+|@
+ 
+ WD05
+|
+ Management
+|@
+ 
+ WD06
+|
+ Teacher/Educator
+|@
+ 
+ WD07
+|
+ Sales/Marketing
+|@
+ 
+ WD08
+|
+ Clerical/Service Worker
+|@
+ 
+ WD09
+|
+ Tradesmen/Laborer
+|@
+ 
+ WD10
+|
+ Farmer
+|@
+ 
+ WD11
+|
+ Student
+|@
+ 
+ WD12
+|
+ Homemaker
+|@
+ 
+ WD13
+|
+ Retired
+|@
+ 
+ WD14
+|
+ Federal Employee
+|@
+ 
+ WD15
+|
+ Military
+|@
+ 
+ WD16
+|
+ Military Retired
+|@
+ 
+ WD17
+|
+ Business Owner
+|@
+ 
+ WD18
+|
+ Religious
+|@
+ 
+ WD19
+|
+ Self Employed
+|@
+ 
+ WD20
+|
+ Financial
+|@
+ 
+ WD99
+|
+ Other
+|@</tbody></table>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="SE_-_Transmission_Service_Error">SE - Transmission Service Error</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ SE00
+|
+ Unexpected Error
+|
+ Your request could not be processed due to an unexpected error. Please retry your request.
+|@
+ 
+ SE01
+|
+ Cloud Service Internal Error
+|
+ The cloud service experienced an internal error.
+|@
+ 
+ SE10
+|
+ Record Number Mismatch
+|
+ Total Records numbers do not match with the records array.
+|@
+ 
+ SE11
+|
+ Month Range Exceeded
+|
+ Months to allow for NCOALink products ranges from 6 to 48.
+|@
+ 
+ SE12
+|
+ Records Array Error
+|
+ Records array is empty, un-allocated, or out of bounds.
+|@
+ 
+ SE13
+|
+ Requesting Record Range Exceeded
+|
+ Requesting records must in the range of 1 to 100.
+|@
+ 
+ SE14
+|
+ No Summary Reports
+|
+ Summary reports do not exist.
+|@
+ 
+ SE15
+|
+ ProcessingType Error
+|
+ ProcessingType is empty or incorrect type.
+|@
+ 
+ SE16
+|
+ FreqProcessing Range Exceeded
+|
+ ListOwnerFreqProcessing ranges from 1 to 52.
+|@
+ 
+ SE17
+|
+ ListName Character Limit
+|
+ OptSmartMoverListName cannot contain over 30 characters.
+|@
+ 
+ SE18
+|
+ ListName Invalid Character
+|
+ OptSmartMoverListName cannot contain any of the following characters \/*:?””&lt;&gt;| or non-printing characters.
+|@
+ 
+ SE19
+|
+ Invalid Link
+|
+ Invalid link.
+|@
+ 
+ SE20
+|
+ License Key Error
+|
+ License Key is not valid or customer’s Paf is not on file.
+|@
+ 
+ SE21
+|
+ SmartMover Service Disabled
+|
+ Smart Mover Service package(s) is/are not enabled. Please contact your sales representative!
+|@
+ 
+ SE22
+|
+ Long JobID
+|
+ JobID cannot contain over 50 characters.
+|@
+ 
+ SE23
+|
+ JobID Invalid Character
+|
+ JobID cannot contain any of the following characters \/*:?””&lt;&gt; |,  non-printing characters or spaces.
+|@
+ 
+ SE24
+|
+ No JobID
+|
+ JobID required to open summary reports.
+|@
+ 
+ SE25
+|
+ Customer PAF Expired
+|
+ The Customer PAF is expired.
+|@
+ 
+ SE26
+|
+ Broker PAF Expired
+|
+ The Broker PAF is expired.
+|@
+ 
+ SE27
+|
+ NO PAFID Match
+|
+ The PAFID does not match.
+|@
+ 
+ SE28
+|
+ No PAFID
+|
+ The under broker customer required a PAFID.
+|@
+ 
+ SE29
+|
+ Unconfirmed PAFID
+|
+ The PAFID is unconfirmed.
+|@
+ 
+ SE30
+|
+ Empty XML
+|
+ Incorrect or empty XML/JSON structure.
+|@
+ 
+ SE31
+|
+ Empty Record Structure
+|
+ Incorrect or empty record structure.
+|@
+ 
+ SE32
+|
+ Incorrect Action
+|
+ The attempted action(s) was incorrect.
+|@</tbody></table>
+<h3> <span class="mw-headline" id="GW_-_General_Transmission_Warning">GW - General Transmission Warning</span></h3>
+<table class="alternate01" cellspacing="0">
+<tbody> 
+<th>Code
+</th>
+<th>Short Description
+</th>
+<th style="border-right:0px;">Long Description
+</th>@
+ 
+ GW01
+|
+ Expiring License
+|
+ Your License Key is expiring soon. Please contact your sales representative for a new License Key.
+|@
+ 
+ GW02
+|
+ Usage Report Warning
+|
+ Unable to report usage. Object will still continue to operate.
+|@
+ 
+ GW03
+|
+ Usage Report Error
+|
+ Unable to report usage. Warning time exceeded. Object will not continue to operate.
+|@
+ 
+ GW04
+|
+ Web Service Communication Error
+|
+ Unable to communicate with the web service to complete the requested call. Please double check any connections issues (e.g. proxy, firewall) and try again.
+|@
+ 
+ GW05
+|
+ Web service subscription inactive
+|
+ An active web service subscription is required to complete the request call but could not be found. Please contact your sales representative to activate.
+|@
+ 
+ GW11
+|
+ Option Name Error
+|
+ The option name is either misspelled or incorrect.
+|@
+ 
+ GW12
+|
+ Option Value Error
+|
+ The option value is misspelled or incorrectly formatted.
+|@
+ 
+ GE01
+|
+ Empty Request Structure
+|
+ The SOAP, JSON, or XML request structure is empty. Not to be confused with the GE01 GeoCode result code.
+|@
+ 
+ GE02
+|
+ Empty Request Record Structure
+|
+ The SOAP, JSON, or XML request record structure is empty. Not to be confused with the GE02 GeoCode result code.
+|@
+ 
+ GE03
+|
+ Records Per Request Exceeded
+|
+ The counted records sent more than the number of records allowed per request.
+|@
+ 
+ GE04
+|
+ Empty License Key
+|
+ The License Key is empty.
+|@
+ 
+ GE05
+|
+ Invalid License Key
+|
+ The License Key is invalid.
+|@
+ 
+ GE06
+|
+ Disabled License Key
+|
+ The License Key is disabled.
+|@
+ 
+ GE07
+|
+ Invalid Request
+|
+ The SOAP, JSON, or XML request is invalid.
+|@
+ 
+ GE08
+|
+ Product/Level Not Enabled
+|
+ The License Key is invalid for this product or level.
+|@
+ 
+ GE09
+|
+ Customer Does Not Exist
+|
+ The Customer ID is not in our system.
+|@
+ 
+ GE10
+|
+ Customer License Disabled
+|
+ The encrypted license is on the ban list.
+|@
+ 
+ GE11
+|
+ Customer Disabled
+|
+ The Customer ID is disabled.
+|@
+ 
+ GE12
+|
+ IP Blacklisted
+|
+ The IP Address is on the global ban list.
+|@
+ 
+ GE13
+|
+ IP Not Whitelisted
+|
+ The IP Address is not on the customer's whitelist.
+|@
+ 
+ GE15
+|
+ Unacceptable License Key
+|
+ Licence key not accepted, please request an encrypted license key from your sales representative.
+|@
+ 
+ GE20
+|
+ Verify Not Activated
+|
+ The Verify package was requested but is not active for the License Key.
+|@
+ 
+ GE21
+|
+ Append Not Activated
+|
+ The Append package was requested but is not active for the License Key.
+|@
+ 
+ GE22
+|
+ Move Not Activated
+|
+ The Move package was requested but is not active for the License Key.
+|@
+ 
+ GE23
+|
+ No Valid Action Requested
+|
+ No valid action was requested by the service. The request must include at least one of the following actions: Check, Verify, Append, or Move.
+|@
+ 
+ GE24
+|
+ Demographics Not Activated
+|
+ The Demographics package was requested but is not active for the License Key.
+|@
+ 
+ GE25
+|
+ No License For Business Demographic
+|
+ The License Key is not subscribed/licensed for the requested business demographic(s).
+|@
+ 
+ GE26
+|
+ CallerID Not Enabled
+|
+ The license key or ID does not have CallerID enabled.
+|@
+ 
+ GE27
+|
+ IP Columns Not Activated
+|
+ IP Columns requested but not active for the customer ID.
+|@
+ 
+ GE28
+|
+ SSN Verification Not Activated
+|
+ SSN Verification requested but not active for the customer ID.
+|@
+ 
+ GE50
+|
+ Job ID Not Found
+|
+ The job ID was not found.
+|@
+ 
+ GE51
+|
+ Job Not Ready
+|
+ The job is not ready.
+|@
+ 
+ GE52
+|
+ No Record in Job
+|
+ There was no record found in the job.
+|@
+ 
+ GE53
+|
+ Record Total Mismatch
+|
+ The received record total does not match the user-specified RecordCount.
+|@
+ 
+ GE54
+|
+ Job in Queue
+|
+ The job is in the queue.
+|@
+ 
+ GE55
+|
+ Job Processing
+|
+ The job is being processed.
+|@
+ 
+ GE56
+|
+ Job Complete
+|
+ The job is complete.
+|@
+ 
+ GE59
+|
+ DataFrame Not Found
+|
+ The DataFrame was not found.
+|@
